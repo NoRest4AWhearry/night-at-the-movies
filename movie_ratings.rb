@@ -11,9 +11,7 @@ loop do
 	puts
 
 	choice = gets.chomp.downcase
-
 	case choice
-
 		when 'add'
 			puts 'What movie do you want to add?'
 			title = gets.chomp
@@ -25,7 +23,6 @@ loop do
 			else
 				puts 'Title Exits'
 			end
-
 		when 'update'
 			puts 'What movie do you want to update?'
 			title = gets.chomp
@@ -37,14 +34,8 @@ loop do
 				movies[title.to_sym] = rating.to_i
 				puts "#{title} has been updated with a rating of #{rating}."
 			end
-
 		when 'display'
-			if movies.empty?
-				puts 'No Movies in database'
-			else
-				movies.each {|movie, rating| puts "#{movie}: #{rating}"}
-			end
-
+			movies.empty? ? puts 'No Movies in database' : movies.each { |movie, rating| puts "#{movie}: #{rating}" }
 		when 'delete'
 			puts 'What movie do you want to update?'
 			title = gets.chomp
