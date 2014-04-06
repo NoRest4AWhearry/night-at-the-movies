@@ -8,8 +8,7 @@ This project uses CRUD to add, display, update, and delete movies and associated
 ##Version 1.1
 * Fresh start with empty hash
 * Added loop of CRUD questions
-###Issues
-* Caught in infinite loop: *solved*
+  * Caught in infinite loop: *solved*
 
 ##Version 1.0:
 * Standard code from Code academy
