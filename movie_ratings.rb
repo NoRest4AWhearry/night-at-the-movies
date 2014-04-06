@@ -1,12 +1,14 @@
 movies = {}
 
 loop do
-
+	puts
 	puts 'Make a choice:'
-	puts '--Add : to add a movie title'
-	puts '--Update : to update a movie rating'
-	puts '--Display: to dispaly all movies'
-	puts '--Delete : to delete a movie'
+	puts '--Add : Add a movie title'
+	puts '--Update : Update a movie rating'
+	puts '--Display: Dispaly all movies'
+	puts '--Delete : Delete a movie'
+	puts '--Exit :  End program'
+	puts
 
 	choice = gets.chomp.downcase
 
@@ -53,7 +55,8 @@ loop do
 				puts "#{title} has been deleted."
 				movies.each {|movie, rating| puts "#{movie}: #{rating}"}
 			end
-
+		when 'exit'
+			break
 		else
 			puts 'I do not understand that command'
 	end
