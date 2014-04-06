@@ -4,5 +4,9 @@
 This project uses CRUD to add, display, update, and delete movies and associated ratings!
 
 #Updates
-###Version 1:
-standard code from Code academy
+###Version 1.1
+*Fresh start with empty hash
+*Added loop of CRUD questions
+
+###Version 1.0:
+*Standard code from Code academy
